@@ -6,9 +6,9 @@ import java.util.List;
 
 
 /**
- * Neighbour API client
+ * Neighbour API client (modified because it is not a real api service)
  */
-public interface NeighbourApiService {
+public interface NeighbourRepository {
 
     /**
      * Get all my Neighbours

@@ -1,5 +1,7 @@
 package com.openclassrooms.entrevoisins.model;
 
+import android.widget.Button;
+
 import java.util.Objects;
 
 /**
@@ -89,7 +91,7 @@ public class Neighbour {
         this.aboutMe = aboutMe;
     }
 
-    @Override
+        @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Dummy mock for the Api
  */
-public class DummyNeighbourApiService implements  NeighbourApiService {
+public class DummyNeighbourRepository implements NeighbourRepository {
 
     private List<Neighbour> neighbours = DummyNeighbourGenerator.generateNeighbours();
 

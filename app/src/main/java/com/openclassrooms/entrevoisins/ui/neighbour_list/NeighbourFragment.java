@@ -14,7 +14,7 @@ import com.openclassrooms.entrevoisins.R;
 import com.openclassrooms.entrevoisins.di.DI;
 import com.openclassrooms.entrevoisins.events.DeleteNeighbourEvent;
 import com.openclassrooms.entrevoisins.model.Neighbour;
-import com.openclassrooms.entrevoisins.service.NeighbourApiService;
+import com.openclassrooms.entrevoisins.service.NeighbourRepository;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -24,7 +24,7 @@ import java.util.List;
 
 public class NeighbourFragment extends Fragment {
 
-    private NeighbourApiService mApiService;
+    private NeighbourRepository mApiService;
     private List<Neighbour> mNeighbours;
     private RecyclerView mRecyclerView;
 
