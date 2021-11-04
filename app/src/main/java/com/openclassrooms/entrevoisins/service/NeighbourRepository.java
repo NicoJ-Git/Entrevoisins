@@ -27,4 +27,7 @@ public interface NeighbourRepository {
      * @param neighbour
      */
     void createNeighbour(Neighbour neighbour);
+
+    Neighbour getNeighboursById(long userId);
+
 }

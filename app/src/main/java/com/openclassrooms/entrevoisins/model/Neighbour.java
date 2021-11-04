@@ -2,6 +2,7 @@ package com.openclassrooms.entrevoisins.model;
 
 import android.widget.Button;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -9,26 +10,39 @@ import java.util.Objects;
  */
 public class Neighbour {
 
-    /** Identifier */
+    /**
+     * Identifier
+     */
     private long id;
 
-    /** Full name */
+    /**
+     * Full name
+     */
     private String name;
 
-    /** Avatar */
+    /**
+     * Avatar
+     */
     private String avatarUrl;
 
-    /** Adress */
+    /**
+     * Adress
+     */
     private String address;
 
-    /** Phone number */
+    /**
+     * Phone number
+     */
     private String phoneNumber;
 
-    /** About me */
+    /**
+     * About me
+     */
     private String aboutMe;
 
     /**
      * Constructor
+     *
      * @param id
      * @param name
      * @param avatarUrl
@@ -55,7 +69,7 @@ public class Neighbour {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName() {
         this.name = name;
     }
 
@@ -91,7 +105,7 @@ public class Neighbour {
         this.aboutMe = aboutMe;
     }
 
-        @Override
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -103,4 +117,6 @@ public class Neighbour {
     public int hashCode() {
         return Objects.hash(id);
     }
+
+
 }

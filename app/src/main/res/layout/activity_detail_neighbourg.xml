@@ -8,155 +8,172 @@
     android:background="#D1D2D3"
     tools:context=".ui.neighbour_list.AddNeighbourActivity">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="wrap_content"
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="16"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#D5D5D5"
+        android:clickable="true"
+        android:tint="#FFB300"
+
+        app:backgroundTint="#FAF8F8"
+        app:layout_constraintBottom_toTopOf="@id/bloc2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/ic_star_white_24dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/bloc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+
+        <TextView
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:ems="16"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@id/imageView"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:layout_margin="8dp"
+            android:text="Name:"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:id="@+id/imageadress"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPostalAddress2"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+            app:layout_constraintTop_toTopOf="@+id/editTextTextPostalAddress2"
+            app:srcCompat="@drawable/ic_baseline_location_on_24" />
 
+        <ImageView
+            android:id="@+id/imagephone"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toTopOf="@id/imagemail"
+            app:layout_constraintStart_toStartOf="@+id/imageadress"
+            app:layout_constraintTop_toBottomOf="@id/imageadress"
+            app:srcCompat="@drawable/ic_baseline_local_phone_24" />
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingActionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:backgroundTint="#D5D5D5"
-            android:clickable="true"
-            android:tint="#FFB300"
-            app:backgroundTint="#FAF8F8"
-            app:layout_constraintBottom_toTopOf="@id/bloc3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bloc2"
-            app:srcCompat="@drawable/ic_star_white_24dp" />
+        <ImageView
+            android:id="@+id/imagemail"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress2"
+            app:layout_constraintStart_toStartOf="@+id/imagephone"
+            app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress2"
+            app:srcCompat="@drawable/ic_baseline_language_24" />
 
-        <android.support.constraint.ConstraintLayout
-            android:id="@+id/bloc2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_marginTop="56dp"
-            android:background="#FFFFFF"
-            android:padding="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView">
-
-
-                <EditText
-                    android:id="@+id/editTextTextPersonName3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:layout_margin="8dp"
-                    android:text="Name"
-                    app:layout_constraintTop_toTopOf="parent"/>
-
-                <ImageView
-                    android:id="@+id/imageadress"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPostalAddress2"
-                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-                    app:layout_constraintTop_toTopOf="@+id/editTextTextPostalAddress2"
-                    app:srcCompat="@drawable/ic_baseline_location_on_24" />
-
-                <ImageView
-                    android:id="@+id/imagephone"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    app:layout_constraintBottom_toTopOf="@id/imagemail"
-                    app:layout_constraintStart_toStartOf="@+id/imageadress"
-                    app:layout_constraintTop_toBottomOf="@id/imageadress"
-                    app:srcCompat="@drawable/ic_baseline_local_phone_24" />
-
-                <ImageView
-                    android:id="@+id/imagemail"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress2"
-                    app:layout_constraintStart_toStartOf="@+id/imagephone"
-                    app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress2"
-                    app:srcCompat="@drawable/ic_baseline_language_24" />
-
-                <EditText
-                    android:id="@+id/editTextTextPostalAddress2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:inputType="textPostalAddress"
-                    app:layout_constraintBottom_toTopOf="@id/editTextPhone2"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageadress"
-                    app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName3" />
-
-                <EditText
-                    android:id="@+id/editTextPhone2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:inputType="phone"
-                    app:layout_constraintBottom_toTopOf="@id/editTextTextEmailAddress2"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imagephone"
-                    app:layout_constraintTop_toBottomOf="@id/editTextTextPostalAddress2" />
-
-                <EditText
-                    android:id="@+id/editTextTextEmailAddress2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:inputType="textEmailAddress"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imagemail"
-                    app:layout_constraintTop_toBottomOf="@id/editTextPhone2" />
-        </android.support.constraint.ConstraintLayout>
-
-        <LinearLayout
-            android:id="@+id/bloc3"
+        <TextView
+            android:id="@+id/editTextTextPostalAddress2"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:layout_marginBottom="44dp"
-            android:background="#FFFFFF"
-            android:orientation="vertical"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@id/editTextPhone2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageadress"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName3" />
+
+        <TextView
+            android:id="@+id/editTextPhone2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@id/editTextTextEmailAddress2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagephone"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPostalAddress2" />
+
+        <TextView
+            android:id="@+id/editTextTextEmailAddress2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bloc2">
+            app:layout_constraintStart_toEndOf="@+id/imagemail"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhone2" />
+    </android.support.constraint.ConstraintLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="A propos de moi"
-                    android:textColor="#000000"
-                    android:textSize="18sp">>
+    <LinearLayout
+        android:id="@+id/bloc3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="44dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bloc2">
 
-                </TextView>
 
-                <EditText
-                    android:id="@+id/editTextTextMultiLine"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textMultiLine"/>
-        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="A propos de moi"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:textColor="@android:color/black" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/upButton"
+        android:layout_width="12dp"
+        android:layout_height="18dp"
+        android:layout_margin="16dp"
+        android:background="#00FFFFFF"
+        android:clickable="true"
+        android:longClickable="true"
+        android:nestedScrollingEnabled="false"
+        android:tint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
 
 
 </android.support.constraint.ConstraintLayout>
