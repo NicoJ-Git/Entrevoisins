@@ -15,7 +15,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.openclassrooms.entrevoisins.R;
 import com.openclassrooms.entrevoisins.events.DeleteNeighbourEvent;
 import com.openclassrooms.entrevoisins.model.Neighbour;
-import com.openclassrooms.entrevoisins.ui.DetailNeighbourgActivity;
+import com.openclassrooms.entrevoisins.ui.neighbour_detail.DetailNeighbourgActivity;
 
 
 import org.greenrobot.eventbus.EventBus;

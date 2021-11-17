@@ -14,11 +14,11 @@
         android:theme="@style/AppTheme.NoActionBar">
 
         <activity
-            android:name=".ui.DetailNeighbourgActivity"
+            android:name=".ui.neighbour_detail.DetailNeighbourgActivity"
             android:exported="true"
             android:label="detail" />
         <activity
-            android:name=".ui.neighbour_list.AddNeighbourActivity"
+            android:name=".ui.neighbour_adding.AddNeighbourActivity"
             android:label="@string/activity_new_neighbour" />
         <activity
             android:name=".ui.neighbour_list.ListNeighbourActivity"

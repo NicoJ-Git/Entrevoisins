@@ -18,7 +18,13 @@ public class ListNeighbourPagerAdapter extends FragmentPagerAdapter {
      */
     @Override
     public Fragment getItem(int position) {
-        return NeighbourFragment.newInstance();
+        switch (position) {
+            case 0:
+                return NeighbourFragment.newInstance(false);
+            case 1:
+                return NeighbourFragment.newInstance(true);
+        }
+        return NeighbourFragment.newInstance(false);
     }
 
     /**
@@ -27,6 +33,6 @@ public class ListNeighbourPagerAdapter extends FragmentPagerAdapter {
      */
     @Override
     public int getCount() {
-        return 1;
+        return 2;
     }
 }

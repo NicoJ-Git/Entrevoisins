@@ -28,6 +28,18 @@ public interface NeighbourRepository {
      */
     void createNeighbour(Neighbour neighbour);
 
+
     Neighbour getNeighboursById(long userId);
 
+    /**
+     *
+     * create a favorite
+     * @param neighbour
+     */
+
+    void removeFavorite(long neighbour);
+
+    void addFavorite(long neighbour);
+
+    List<Neighbour> getFavoriteNeighbours();
 }

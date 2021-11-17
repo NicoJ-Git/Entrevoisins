@@ -1,8 +1,5 @@
 package com.openclassrooms.entrevoisins.model;
 
-import android.widget.Button;
-
-import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -41,6 +38,11 @@ public class Neighbour {
     private String aboutMe;
 
     /**
+     * Ajout du critère: "est favori"
+     */
+    private boolean favorite;
+
+    /**
      * Constructor
      *
      * @param id
@@ -55,6 +57,7 @@ public class Neighbour {
         this.address = address;
         this.phoneNumber = phoneNumber;
         this.aboutMe = aboutMe;
+        this.favorite = false;
     }
 
     public long getId() {
@@ -103,6 +106,14 @@ public class Neighbour {
 
     public void setAboutMe(String aboutMe) {
         this.aboutMe = aboutMe;
+    }
+
+    public boolean isFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.favorite = favorite;
     }
 
     @Override
