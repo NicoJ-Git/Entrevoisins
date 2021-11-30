@@ -92,11 +92,7 @@ public class DetailNeighbourgActivity extends AppCompatActivity {
         /**
          * afficher "étoile favorite" ou non
          */
-//        if (isDisplayedFavorite) {
-//            mFavoriteBtn.setImageResource(R.drawable.ic_star_white_24dp);
-//        } else {
-//            mFavoriteBtn.setImageResource(R.drawable.ic_star_border_white_24dp);
-//        }
+
         setStar(); // gérer affichage voisin en fonction de favori ou pas
 
         /**
@@ -107,16 +103,6 @@ public class DetailNeighbourgActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-//                if (isDisplayedFavorite) {
-//                    isDisplayedFavorite = false;
-//                    mFavoriteBtn.setImageResource(R.drawable.ic_star_border_white_24dp);
-//                    mNeighbourRepository.removeFavorite(neighbourId);
-//                } else {
-//                    isDisplayedFavorite = true;
-//                    mFavoriteBtn.setImageResource(R.drawable.ic_star_white_24dp);
-//                    mNeighbourRepository.addFavorite(neighbourId);
-//                    //Toast.makeText(DetailNeighbourgActivity.this.getApplicationContext(), (CharSequence) favoriteNeighbourList.getName()+" is cheched", Toast.LENGTH_SHORT).show();
-//                }
 
                 isDisplayedFavorite = !isDisplayedFavorite;
                 setStar();

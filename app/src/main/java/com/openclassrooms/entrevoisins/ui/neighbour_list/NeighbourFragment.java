@@ -48,10 +48,20 @@ public class NeighbourFragment extends Fragment {
         mApiService = DI.getNeighbourApiService();
     }
 
+
+    /**
+     * Added condition for each view of the fragment via the bundle for the parameter "isFavorite"
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_neighbour_list, container, false);
+        View view;
+        if (getArguments().getBoolean("FAVORITE")) {
+            view = inflater.inflate(R.layout.fragment_favorite_neighbour_list, container, false);
+        } else {
+            view = inflater.inflate(R.layout.fragment_neighbour_list, container, false);
+        }
+
         Context context = view.getContext();
         mRecyclerView = (RecyclerView) view;
         mRecyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL));
