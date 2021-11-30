@@ -76,12 +76,9 @@ public class DummyNeighbourRepository implements NeighbourRepository {
     public List<Neighbour> getFavoriteNeighbours() {
         List<Neighbour> favoriteNeighbourList = new ArrayList<>();
 
-
         for (Neighbour neighbour : neighbours) {
             if (neighbour.isFavorite()) {
                 favoriteNeighbourList.add(neighbour);
-
-
             }
         }
         return favoriteNeighbourList;

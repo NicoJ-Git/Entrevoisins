@@ -48,6 +48,7 @@ public class Neighbour {
      * @param id
      * @param name
      * @param avatarUrl
+     * ajout du critère "est favori" dans le constructeur
      */
     public Neighbour(long id, String name, String avatarUrl, String address,
                      String phoneNumber, String aboutMe) {
