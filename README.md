@@ -17,3 +17,7 @@ Liens: https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/GEN+andr
 Commentaires / analyse:
 Le binding des nouveaux widget continue à être effectué grace à butterknife (comme à l'initial).
 Le parametre clef pour passer les données d'un voisin dans la vue de détail est l'"Id" du voisin.
+
+**************************************************************************************************************************
+MAJ: 10-11-: suite à la demande lors de la soutenance, rajout des 3 tests instrumentaux concernant les nouvelles features.
+**************************************************************************************************************************
