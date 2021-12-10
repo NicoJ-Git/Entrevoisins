@@ -68,8 +68,8 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/bloc2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="386dp"
+        android:layout_height="159dp"
         android:layout_margin="8dp"
         android:layout_marginTop="56dp"
         android:background="#FFFFFF"
